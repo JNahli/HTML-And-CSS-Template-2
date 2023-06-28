@@ -1,7 +1,7 @@
 /* Start variables */
 :root {
   --main-color: #19c8fa;
-  --transparent-colot: rgb(15 116 143 / 70%)
+  --transparent-colot: rgb(15 116 143 / 70%);
 }
 /* End variables */
 /* Start global roules */
@@ -13,11 +13,10 @@
   margin: 0;
 }
 html {
-scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: black;
+  font-family: "Open Sans", sans-serif;
 }
 ul {
   list-style: none;
@@ -47,7 +46,50 @@ ul {
   }
 }
 /* End global roules */
-
+/* Start Component */
+.section {
+  padding: 100px; /* !!!! For Delet later */
+}
+.main-heading {
+  text-align: center;
+}
+.main-heading h2 {
+  font-weight: normal;
+  font-size: 40px;
+  position: relative;
+  margin-bottom: 70px;
+  text-transform: uppercase;
+}
+.main-heading h2::before {
+  content: "";
+  position: absolute;
+  background-color: #333;
+  width: 120px;
+  height: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30px;
+}
+.main-heading h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  bottom: -38px;
+  background-color: white;
+}
+.main-heading p {
+  width: 550px;
+  margin: 0 auto 100px;
+  max-width: 100%;
+  line-height: 2;
+  color: #777;
+}
+/* End Component */
 /* Start Header */
 header {
   position: absolute;
@@ -55,7 +97,7 @@ header {
   width: 100%;
   z-index: 2;
 }
-header .container{
+header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -85,7 +127,7 @@ header nav .toggle-menu {
   font-size: 22px;
 }
 @media (min-width: 768px) {
-  header nav .toggle-menu{
+  header nav .toggle-menu {
     display: none;
   }
 }
@@ -158,7 +200,7 @@ header nav i:hover {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.50);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .landing .text {
   position: absolute;
