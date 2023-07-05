@@ -467,7 +467,6 @@ header nav i:hover {
   top: 50%;
   transform: translateY(-50%);
   padding: 50px;
-  background-color: var(--transparent-colot);
   color: white;
   text-align: center;
 }
